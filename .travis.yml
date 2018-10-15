@@ -1,0 +1,6 @@
+#.travis.yml
+
+osx_image: xcode10.0
+language: objective-c
+xcode_project: branchTest.xcodeproj
+script: xcodebuild -project branchTest.xcodeproj -scheme "branchTest" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
